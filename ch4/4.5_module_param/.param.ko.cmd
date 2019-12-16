@@ -1,0 +1,1 @@
+cmd_/home/roro/git_repo/DeviceDriver/ch4/4.5_module_param/param.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/roro/git_repo/DeviceDriver/ch4/4.5_module_param/param.ko /home/roro/git_repo/DeviceDriver/ch4/4.5_module_param/param.o /home/roro/git_repo/DeviceDriver/ch4/4.5_module_param/param.mod.o ;  true
