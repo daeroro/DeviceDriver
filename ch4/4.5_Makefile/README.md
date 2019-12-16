@@ -1,14 +1,20 @@
 #Makefile
 
-obj-m	:= test.o					>> module name
+#### module name
+obj-m	:= test.o					
 
-KDIR	:= /lib/modules/$(shell uname -r)/build		>> kernel source directory
+#### kernel source directory
+KDIR	:= /lib/modules/$(shell uname -r)/build		
 
-PWD 	:= $(shell pwd)					>> module source directory
+#### module source directory
+PWD 	:= $(shell pwd)					
 
-default:						>> module compile
+#### module compile
+default:						
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
-clean:							>> file delete
+
+#### file delete
+clean:							
 	rm -rf *.ko
 	rm -rf *.mod.*
 	rm -rf .*.cmd
