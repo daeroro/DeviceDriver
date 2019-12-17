@@ -1,1 +1,0 @@
-cmd_/home/roro/git_repo/DeviceDriver/ch4/4.1_Hello_world/test.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/roro/git_repo/DeviceDriver/ch4/4.1_Hello_world/test.ko /home/roro/git_repo/DeviceDriver/ch4/4.1_Hello_world/test.o /home/roro/git_repo/DeviceDriver/ch4/4.1_Hello_world/test.mod.o ;  true
