@@ -29,7 +29,7 @@
 - **unregister_chrdev()** : 등록된 디바이스를 제거	
 
 ```c
-int **register_chrdev**(unsigned int major, const char *name, struct file_operations * fops)
+int register_chrdev(unsigned int major, const char *name, struct file_operations * fops)
 ```
 
 - major(주 번호) : 응용 프로그램에서 디바이스 파일을 이용해 디바이스 드라이버를 찾을 때 사용
@@ -42,7 +42,7 @@ int **register_chrdev**(unsigned int major, const char *name, struct file_operat
 
 
 ```c
-int **unregister_chrdev**(unsigned int major, const char * name)
+int unregister_chrdev(unsigned int major, const char * name)
 ```
 
 - major(주 번호), name(디바이스 드라이버 이름)
